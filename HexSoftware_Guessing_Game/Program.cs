@@ -131,7 +131,7 @@ namespace HexSoftware_Guessing_Game
             int iGuess;
             int iAttempt = 0;
             
-            Console.WriteLine("The random number is : " + iAdapt);
+            //Console.WriteLine("The random number is : " + iAdapt);
 
             do
             {
