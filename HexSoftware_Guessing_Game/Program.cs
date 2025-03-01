@@ -57,6 +57,7 @@ namespace HexSoftware_Guessing_Game
                     iAdapt = EasyMode() + 0; //Random variable set to range from 1-10
                     iLimit = 10; //Easy mode gives you 10 attempts to guess the right number
 
+                    Console.Clear();
                     Console.WriteLine("You have 10 attempts to guess the number.");
                     Console.WriteLine("Your number is between 1-10");
                     Play(iAdapt, iLimit);
@@ -65,6 +66,7 @@ namespace HexSoftware_Guessing_Game
                     iAdapt = NormalMode() + 0; //Random variable set to range from 1-25
                     iLimit = 9; //Normal mode gives you 9 attempts to guess the right number
 
+                    Console.Clear();
                     Console.WriteLine("You have 9 attempts to guess the number.");
                     Console.WriteLine("Your number is between 1-25");
                     Play(iAdapt, iLimit);
@@ -73,6 +75,7 @@ namespace HexSoftware_Guessing_Game
                     iAdapt = HardMode() + 0; //Random variable set to range from 1-50
                     iLimit = 8; //Hard mode gives you 8 attempts to guess the right number
 
+                    Console.Clear();
                     Console.WriteLine("You have 8 attempts to guess the number.");
                     Console.WriteLine("Your number is between 1-50");
                     Play(iAdapt, iLimit);
@@ -81,6 +84,7 @@ namespace HexSoftware_Guessing_Game
                     iAdapt = VeryHardMode() + 0; //Random variable set to range from 1-75
                     iLimit = 7; //Very hard mode gives you 7 attempts to guess the right number
 
+                    Console.Clear();
                     Console.WriteLine("You have 7 attempts to guess the number.");
                     Console.WriteLine("Your number is between 1-75");
                     Play(iAdapt, iLimit);
@@ -89,6 +93,7 @@ namespace HexSoftware_Guessing_Game
                     iAdapt = ImpossibleMode() + 0; //Random variable set to range from 1-100
                     iLimit = 5; //Impossible mode gives you 5 attempts to guess the right number
 
+                    Console.Clear();
                     Console.WriteLine("You have 5 attempts to guess the number.");
                     Console.WriteLine("Your number is between 1-100");
                     Play(iAdapt, iLimit);
@@ -125,8 +130,7 @@ namespace HexSoftware_Guessing_Game
         {
             int iGuess;
             int iAttempt = 0;
-
-            Console.Clear();
+            
             Console.WriteLine("The random number is : " + iAdapt);
 
             do
